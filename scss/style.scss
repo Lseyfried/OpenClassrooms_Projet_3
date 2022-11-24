@@ -1,0 +1,97 @@
+@import "config";
+@import "utilities";
+
+// Semantique
+
+body{
+    min-width: 320px;
+    margin: auto;
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: 136px;
+    align-self: center;
+    margin-top: 15px;
+}
+
+header{
+    font-family: $secondary-font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article{
+    align-items: center;
+}
+
+// Navigation
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+.navBar{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    font-weight: normal;
+    width: 100%;
+    &_localisation{
+        padding: 9px;
+    }
+    &_description{
+        width: 100px;
+    }
+}
+}
+
+// article 1
+
+.explorer{
+    display: flex;
+    flex-direction: column;
+   &_btn{
+    border-radius: 35px;
+    background-color: $secondary-color;
+    padding: 1px 50px 1px;
+    margin-top: 25px;
+    box-shadow: -1px 9px 19px -6px rgba(0,0,0,0.75);
+    }
+}
+// Titres
+
+h1{
+    font-size: 16px;
+    padding: 15px;
+}
+
+h2{
+    font-size: 16px;
+    padding: 15px;
+}
+
+h3{
+    font-size: 16px;
+    padding: 15px;
+    margin: 0;
+}
+
+// Fonctionnement
+
+article{
+    display: flex;
+    justify-content: center;
+    ul{
+        padding: 0;
+        li{
+            list-style-type: none;
+        }
+    }
+}
