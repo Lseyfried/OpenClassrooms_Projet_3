@@ -22,13 +22,16 @@ a{
 
 header{
     font-family: $secondary-font;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    @include flexbox;
+ }
 
 article{
     align-items: center;
+}
+
+section{
+    @include flexbox;
+    background-color: white;
 }
 
 // Navigation
@@ -82,16 +85,45 @@ h3{
     padding: 15px;
     margin: 0;
 }
+h4{
+    font-size: 16px;
+    margin:0;
+    padding: 12px;
+}
 
 // Fonctionnement
-
-article{
+.operation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+.choice{
     display: flex;
     justify-content: center;
-    ul{
-        padding: 0;
-        li{
-            list-style-type: none;
+    border: 1px $primary-color solid;
+    border-radius: 20px;
+    &_icone{
+        display: flex;
+        padding: 13px;
+        &--number{
+            border: 1px $secondary-color solid;
+            background-color: $primary-color;
+            display: flex;
+            padding: 14px;
+            border-radius: 26px;
         }
     }
+}
+.restaurant{
+    @include flexbox;
+    &_card{
+        @include flexbox;
+        &_image{
+            width: 8%;
+            height: 10px;
+        }
+
+    }
+
 }
