@@ -27,11 +27,18 @@ header{
 
 article{
     align-items: center;
+    background-color: $primary-background;
 }
 
 section{
     @include flexbox;
     background-color: white;
+}
+
+footer{
+    background-color: darkgray;
+    @include flexbox;
+    justify-content: space-between;
 }
 
 // Navigation
@@ -73,6 +80,7 @@ section{
 h1{
     font-size: 16px;
     padding: 15px;
+    font-weight: bold;
 }
 
 h2{
@@ -103,27 +111,81 @@ h4{
     justify-content: center;
     border: 1px $primary-color solid;
     border-radius: 20px;
+    position: relative;
     &_icone{
         display: flex;
-        padding: 13px;
+        padding: 16px;
         &--number{
             border: 1px $secondary-color solid;
             background-color: $primary-color;
             display: flex;
-            padding: 14px;
+            padding: 6px;
             border-radius: 26px;
+            position: absolute;
+            left: -14px;
+            bottom: 9px
         }
     }
 }
+
+.choice:hover{
+    background-color: $secondary-color;
+}
 .restaurant{
     @include flexbox;
+    background-color: $primary-background;
+    margin-bottom: 50px;
+    font-style: $secondary-font;
     &_card{
         @include flexbox;
-        &_image{
-            width: 8%;
-            height: 10px;
+        width: 100%;
+        margin-bottom: 50px;
+        &_description{
+            width:100%;
         }
-
     }
+}
 
+.image_restaurant{
+    width: 100%;
+    height: 67px;
+    object-fit: cover;
+}
+
+.restaurant_descrip{
+    padding: 0;
+}
+
+// Footer
+.logofooter{
+    font-style: $primary-font;
+    color:white;
+    padding: 0;
+    margin-left: 10px;
+    &_propose{
+        @include flexbox;
+        justify-content: space-between;
+        height: 100px;
+        &--line{
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+.become{
+   display: flex;
+   &_icone{
+    padding: 3px;
+    margin-right: 3px;
+   }
+}
+.partner{
+    display: flex;
+    &_icone{
+        padding: 3px;
+        margin-right: 3px;
+    }
+}
+.footer_position{
+    margin-left: 10px;
 }
