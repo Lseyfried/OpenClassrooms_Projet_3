@@ -1,0 +1,109 @@
+@import "../Utils/variables";
+@import "../Utils/utilities";
+
+// Header
+
+.headernav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  .logonav {
+    width: 100px;
+    align-self: center;
+    margin-right: 40%;
+  }
+  .headerlink {
+    margin-top: 10px;
+  }
+}
+
+.headerimage {
+  width: 100%;
+  align-self: center;
+  margin-top: 32px;
+  z-index: 0;
+}
+
+// Page
+.article_border {
+  @include flexbox;
+  position: relative;
+}
+
+.headerheart {
+  display: flex;
+  flex-direction: row;
+  .title_one {
+    align-self: center;
+    font-weight: bold;
+    position: absolute;
+    top: 36%;
+    right: -4px;
+    background-color: #f2f2f2;
+    z-index: 1;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 306px;
+
+    .heart {
+      padding: 15px;
+    }
+  }
+}
+
+.fa-heart {
+  position: absolute;
+  right: 19px;
+  top: 225px;
+  z-index: 1;
+}
+
+.entertitle {
+  align-self: start;
+  .title_enter {
+    margin-bottom: 7px;
+    border-bottom: 3px $tertiary-color solid;
+  }
+}
+
+.meal {
+  width: 100%;
+}
+footer {
+  background-color: darkgray;
+  @include flexbox;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.logofooter {
+  font-style: $primary-font;
+  color: white;
+  padding: 0;
+  margin-left: 10px;
+  &_propose {
+    @include flexbox;
+    justify-content: space-between;
+    height: 100px;
+    &--line {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+.become {
+  display: flex;
+  &_icone {
+    padding: 3px;
+    margin-right: 3px;
+  }
+}
+.partner {
+  display: flex;
+  &_icone {
+    padding: 3px;
+    margin-right: 3px;
+  }
+}
+.footer_position {
+  margin-left: 10px;
+}

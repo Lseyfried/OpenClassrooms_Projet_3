@@ -1,191 +1,202 @@
-@import "config";
-@import "utilities";
+@import "Utils/variables";
+@import "Utils/utilities";
+@import "Pages/navigation";
 
 // Semantique
-
-body{
-    min-width: 320px;
-    margin: auto;
-    font-size: 10px;
+body {
+  min-width: 320px;
+  margin: auto;
+  font-size: 10px;
+  background-color: #f2f2f2;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.logo{
-    width: 136px;
-    align-self: center;
-    margin-top: 15px;
+.logo {
+  width: 136px;
+  align-self: center;
+  margin-top: 15px;
 }
 
-header{
-    font-family: $secondary-font;
-    @include flexbox;
- }
-
-article{
-    align-items: center;
-    background-color: $primary-background;
+header {
+  @include flexbox;
 }
 
-section{
-    @include flexbox;
-    background-color: white;
+article {
+  align-items: center;
+  background-color: $primary-background;
 }
 
-footer{
-    background-color: darkgray;
-    @include flexbox;
-    justify-content: space-between;
+section {
+  @include flexbox;
+  background-color: white;
+}
+
+footer {
+  background-color: darkgray;
+  @include flexbox;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 // Navigation
 
-.navigation{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-.navBar{
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .navBar {
     display: flex;
     justify-content: center;
     background-color: gray;
     font-weight: normal;
     width: 100%;
-    &_localisation{
-        padding: 9px;
+    font-style: "Roboto", sans-serif;
+    &_localisation {
+      padding: 14px 4px;
     }
-    &_description{
-        width: 100px;
+    &_description {
     }
-}
+  }
 }
 
 // article 1
 
-.explorer{
-    display: flex;
-    flex-direction: column;
-   &_btn{
+.explorer {
+  font-style: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  &_btn {
     border-radius: 35px;
     background-color: $secondary-color;
-    padding: 1px 50px 1px;
+    padding: 7px 50px 7px;
     margin-top: 25px;
-    box-shadow: -1px 9px 19px -6px rgba(0,0,0,0.75);
-    }
+    box-shadow: -1px 9px 19px -6px rgba(0, 0, 0, 0.75);
+  }
 }
 // Titres
 
-h1{
-    font-size: 16px;
-    padding: 15px;
-    font-weight: bold;
+h1 {
+  font-size: 16px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 0;
 }
 
-h2{
-    font-size: 16px;
-    padding: 15px;
+h2 {
+  font-size: 16px;
+  padding: 15px;
 }
 
-h3{
-    font-size: 16px;
-    padding: 15px;
-    margin: 0;
+h3 {
+  font-size: 16px;
+  padding: 15px;
+  margin: 0;
 }
-h4{
-    font-size: 16px;
-    margin:0;
-    padding: 12px;
+h4 {
+  font-size: 16px;
+  margin: 0;
+  padding: 12px;
 }
 
 // Fonctionnement
-.operation{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 300px;
+.operation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
 }
-.choice{
+.choice {
+  display: flex;
+  justify-content: center;
+  border: 1px $primary-color solid;
+  border-radius: 20px;
+  position: relative;
+  width: 250px;
+  &_icone {
     display: flex;
-    justify-content: center;
-    border: 1px $primary-color solid;
-    border-radius: 20px;
-    position: relative;
-    &_icone{
-        display: flex;
-        padding: 16px;
-        &--number{
-            border: 1px $secondary-color solid;
-            background-color: $primary-color;
-            display: flex;
-            padding: 6px;
-            border-radius: 26px;
-            position: absolute;
-            left: -14px;
-            bottom: 9px
-        }
+    padding: 16px;
+    &--number {
+      border: 1px $secondary-color solid;
+      background-color: $primary-color;
+      display: flex;
+      padding: 6px;
+      border-radius: 189px 189px 189px 189px;
+      -webkit-border-radius: 189px 189px 189px 189px;
+      -moz-border-radius: 189px 189px 189px 189px;
+      position: absolute;
+      left: -14px;
+      bottom: 9px;
     }
+  }
 }
 
-.choice:hover{
-    background-color: $secondary-color;
+.choice:hover {
+  background-color: $secondary-color;
 }
-.restaurant{
+.restaurant {
+  @include flexbox;
+  flex-grow: 1;
+  background-color: $primary-background;
+
+  font-style: $secondary-font;
+  &_card {
     @include flexbox;
-    background-color: $primary-background;
-    margin-bottom: 50px;
-    font-style: $secondary-font;
-    &_card{
-        @include flexbox;
-        width: 100%;
-        margin-bottom: 50px;
-        &_description{
-            width:100%;
-        }
-    }
-}
-
-.image_restaurant{
     width: 100%;
-    height: 67px;
-    object-fit: cover;
+    margin-bottom: 50px;
+    &_description {
+      width: 100%;
+    }
+  }
 }
 
-.restaurant_descrip{
-    padding: 0;
+.image_restaurant {
+  width: 100%;
+  height: 67px;
+  object-fit: cover;
+}
+
+.restaurant_descrip {
+  padding: 0;
+}
+
+.choicerestaurant {
+  width: 100%;
 }
 
 // Footer
-.logofooter{
-    font-style: $primary-font;
-    color:white;
-    padding: 0;
-    margin-left: 10px;
-    &_propose{
-        @include flexbox;
-        justify-content: space-between;
-        height: 100px;
-        &--line{
-            padding: 0;
-            margin: 0;
-        }
+.logofooter {
+  font-style: $primary-font;
+  color: white;
+  padding: 0;
+  margin-left: 10px;
+  &_propose {
+    @include flexbox;
+    justify-content: space-between;
+    height: 100px;
+    &--line {
+      padding: 0;
+      margin: 0;
     }
+  }
 }
-.become{
-   display: flex;
-   &_icone{
+.become {
+  display: flex;
+  &_icone {
     padding: 3px;
     margin-right: 3px;
-   }
+  }
 }
-.partner{
-    display: flex;
-    &_icone{
-        padding: 3px;
-        margin-right: 3px;
-    }
+.partner {
+  display: flex;
+  &_icone {
+    padding: 3px;
+    margin-right: 3px;
+  }
 }
-.footer_position{
-    margin-left: 10px;
+.footer_position {
+  margin-left: 10px;
 }
