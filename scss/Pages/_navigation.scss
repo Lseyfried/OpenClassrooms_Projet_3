@@ -2,7 +2,9 @@
 @import "../Utils/utilities";
 
 // Header
-
+.headernavigation {
+  position: relative;
+}
 .headernav {
   display: flex;
   flex-direction: row;
@@ -10,7 +12,6 @@
   .logonav {
     width: 100px;
     align-self: center;
-    margin-right: 40%;
   }
   .headerlink {
     margin-top: 10px;
@@ -19,9 +20,16 @@
 
 .headerimage {
   width: 100%;
+  height: 259px;
   align-self: center;
   margin-top: 32px;
   z-index: 0;
+}
+
+.headerarrow {
+  position: absolute;
+  left: 10px;
+  font-size: 20px;
 }
 
 // Page
@@ -33,18 +41,18 @@
 .headerheart {
   display: flex;
   flex-direction: row;
+  padding: 0;
   .title_one {
     align-self: center;
     font-weight: bold;
     position: absolute;
-    top: 36%;
-    right: -4px;
+    top: 46%;
+    right: 0;
     background-color: #f2f2f2;
     z-index: 1;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    width: 306px;
-
+    width: 100%;
     .heart {
       padding: 15px;
     }
@@ -68,7 +76,14 @@
 
 .meal {
   width: 100%;
+  border-radius: 10px;
+  height: 45px;
 }
+.bouton {
+  margin-bottom: 20px;
+}
+
+//   FOOTER
 footer {
   background-color: darkgray;
   @include flexbox;
@@ -80,6 +95,7 @@ footer {
   color: white;
   padding: 0;
   margin-left: 10px;
+  margin-bottom: 15px;
   &_propose {
     @include flexbox;
     justify-content: space-between;
@@ -106,4 +122,31 @@ footer {
 }
 .footer_position {
   margin-left: 10px;
+}
+.meal {
+  margin-top: 10px;
+  border-radius: 10px;
+  &_title {
+    font-style: $secondary-font;
+    margin-left: 15px;
+    padding: 0;
+    &--description {
+      padding: 0;
+      margin-left: 15px;
+      font-size: 15px;
+      font-weight: 400;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 198px;
+    }
+  }
+}
+
+.title_prix {
+  display: flex;
+  justify-content: space-between;
+  .prix {
+    font-size: 15px;
+  }
 }
