@@ -20,7 +20,7 @@
 
 .headerimage {
   width: 100%;
-  height: 259px;
+  height: 340px;
   align-self: center;
   margin-top: 32px;
   z-index: 0;
@@ -43,34 +43,43 @@
   flex-direction: row;
   padding: 0;
   .title_one {
+    font-style: $primary-font;
+    font-size: 31px;
     align-self: center;
     font-weight: bold;
     position: absolute;
-    top: 46%;
+    top: 296px;
     right: 0;
     background-color: #f2f2f2;
     z-index: 1;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    width: 100%;
-    .heart {
-      padding: 15px;
-    }
+    padding-top: 19px;
+    padding-bottom: 22px;
+    left: 0px;
+    padding-left: 30px;
   }
 }
-
-.fa-heart {
+.heartpage {
   position: absolute;
-  right: 19px;
-  top: 225px;
+  left: 90%;
+  bottom: 47%;
   z-index: 1;
+  font-size: 16px;
+  right: 1%;
 }
 
 .entertitle {
   align-self: start;
+  width: 12px;
+  padding-left: 0;
   .title_enter {
-    margin-bottom: 7px;
-    border-bottom: 3px $tertiary-color solid;
+    margin: 10px;
+    border-bottom: 2px $tertiary-color solid;
+    padding-bottom: 5px;
+    &--plat {
+      margin-left: 70px;
+    }
   }
 }
 

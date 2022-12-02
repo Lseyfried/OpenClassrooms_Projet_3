@@ -8,6 +8,7 @@ body {
   margin: auto;
   font-size: 10px;
   background-color: #f2f2f2;
+  font-style: $secondary-font;
 }
 
 a {
@@ -36,7 +37,7 @@ section {
 }
 
 footer {
-  background-color: darkgray;
+  background-color: darken($fourth-color, 50%);
   @include flexbox;
   justify-content: space-between;
   padding-bottom: 20px;
@@ -51,7 +52,14 @@ footer {
   .navBar {
     display: flex;
     justify-content: center;
-    background-color: gray;
+    background-color: darken($fourth-color, 20%);
+    background: linear-gradient(
+      180deg,
+      rgba(191, 191, 191, 1) 0%,
+      rgba(229, 229, 229, 1) 6%,
+      rgba(229, 229, 229, 1) 100%
+    );
+
     font-weight: normal;
     width: 100%;
     font-style: "Roboto", sans-serif;
@@ -72,9 +80,19 @@ footer {
   &_btn {
     border-radius: 35px;
     background-color: $secondary-color;
+    background: linear-gradient(
+      168deg,
+      rgba(255, 121, 218, 1) 0%,
+      rgba(255, 121, 218, 1) 16%,
+      rgba(147, 86, 220, 1) 100%
+    );
     padding: 7px 50px 7px;
     margin-top: 25px;
     box-shadow: -1px 9px 19px -6px rgba(0, 0, 0, 0.75);
+    &---paragraphe {
+      font-size: 15px;
+      color: white;
+    }
   }
 }
 // Titres
@@ -89,6 +107,10 @@ h1 {
 h2 {
   font-size: 16px;
   padding: 15px;
+}
+
+.title_h2 {
+  font-weight: 400;
 }
 
 h3 {
@@ -107,35 +129,48 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 300px;
+  height: 365px;
+  background-color: white;
+  margin-top: 25px;
 }
+
+.function {
+  margin-right: auto;
+}
+
 .choice {
   display: flex;
-  justify-content: center;
-  border: 1px $primary-color solid;
+  background-color: $fourth-color;
+  border: 1px $fourth-color solid;
   border-radius: 20px;
   position: relative;
   width: 250px;
+  padding: 12px 5px;
   &_icone {
     display: flex;
     padding: 16px;
     &--number {
+      color: white;
       border: 1px $secondary-color solid;
       background-color: $primary-color;
       display: flex;
       padding: 6px;
-      border-radius: 189px 189px 189px 189px;
-      -webkit-border-radius: 189px 189px 189px 189px;
-      -moz-border-radius: 189px 189px 189px 189px;
+      border-radius: 195px 195px 195px 195px;
+      -webkit-border-radius: 195px 195px 195px 195px;
+      -moz-border-radius: 195px 195px 195px 195px;
       position: absolute;
-      left: -14px;
-      bottom: 9px;
+      left: -10px;
+      bottom: 20px;
     }
   }
 }
 
+.last {
+  margin-bottom: 25px;
+}
+
 .choice:hover {
-  background-color: $secondary-color;
+  background-color: lighten($secondary-color, 23%);
 }
 .restaurant {
   @include flexbox;
@@ -147,18 +182,46 @@ h4 {
     @include flexbox;
     width: 100%;
     margin-bottom: 50px;
+    position: relative;
+    border-radius: 15px;
     &_description {
       width: 100%;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
     }
   }
+}
+.heart {
+  position: absolute;
+  left: 87%;
+  top: 84%;
+  font-size: 25px;
 }
 
 .image_restaurant {
   width: 100%;
-  height: 67px;
+  height: 180px;
   object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-
+.new {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 80%;
+  bottom: 80%;
+  &_title {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: darken($color: $tertiary-color, $amount: 40%);
+    padding: 5px;
+    background-color: $tertiary-color;
+  }
+}
 .restaurant_descrip {
   padding: 0;
 }
@@ -172,7 +235,7 @@ h4 {
   font-style: $primary-font;
   color: white;
   padding: 0;
-  margin-left: 10px;
+  margin-left: 0;
   &_propose {
     @include flexbox;
     justify-content: space-between;
