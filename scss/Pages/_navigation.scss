@@ -63,6 +63,61 @@
 .heartpage {
   position: absolute;
   left: 90%;
+  bottom: 42%;
+  z-index: 1;
+  font-size: 16px;
+  right: 1%;
+}
+
+.heart_color--nav {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    77deg,
+    rgba(255, 121, 218, 1) 0%,
+    rgba(147, 86, 220, 1) 52%,
+    rgba(147, 86, 220, 1) 98%
+  );
+  position: absolute;
+  left: 1256px;
+  top: 328px;
+  z-index: 1;
+  font-size: 17px;
+  border: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.heart_color--navpalette {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    77deg,
+    rgba(255, 121, 218, 1) 0%,
+    rgba(147, 86, 220, 1) 52%,
+    rgba(147, 86, 220, 1) 98%
+  );
+  position: absolute;
+  left: 628px;
+  top: 328px;
+  z-index: 1;
+  font-size: 17px;
+  border: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.heartlanote {
+  position: absolute;
+  left: 90%;
   bottom: 47%;
   z-index: 1;
   font-size: 16px;
@@ -87,7 +142,9 @@
   width: 100%;
   border-radius: 10px;
   height: 45px;
+  transition: transform 0.5s ease;
 }
+
 .bouton {
   margin-bottom: 20px;
 }

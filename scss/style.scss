@@ -171,17 +171,22 @@ h4 {
 
 .choice:hover {
   background-color: lighten($secondary-color, 23%);
+  color: $primary-color;
+}
+.shownav {
+  color: black;
 }
 .restaurant {
   @include flexbox;
+  justify-content: space-around;
   flex-grow: 1;
   background-color: $primary-background;
+  height: 1273px;
 
   font-style: $secondary-font;
   &_card {
     @include flexbox;
     width: 100%;
-    margin-bottom: 50px;
     position: relative;
     border-radius: 15px;
     &_description {
@@ -198,6 +203,31 @@ h4 {
   left: 87%;
   top: 84%;
   font-size: 25px;
+  transition: opacity;
+  &:hover {
+    opacity: 0;
+  }
+}
+.heart_color {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    77deg,
+    rgba(255, 121, 218, 1) 0%,
+    rgba(147, 86, 220, 1) 52%,
+    rgba(147, 86, 220, 1) 98%
+  );
+  position: absolute;
+  left: 278px;
+  top: 192px;
+  font-size: 26px;
+  border: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .image_restaurant {
