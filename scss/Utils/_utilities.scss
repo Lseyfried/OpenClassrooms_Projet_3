@@ -4,20 +4,11 @@
   justify-content: center;
 }
 
-@keyframes heart_off {
+@keyframes rotationcheck {
   0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.75;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
+    transform: rotate(-270deg);
   }
   100% {
-    opacity: 0;
+    transform: rotate(0);
   }
 }
