@@ -12,3 +12,12 @@
     transform: rotate(0);
   }
 }
+
+@keyframes meal_apparition {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

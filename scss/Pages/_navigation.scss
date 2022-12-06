@@ -190,10 +190,17 @@ footer {
   margin-left: 10px;
 }
 .meal {
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: 100ms * $i;
+    }
+  }
   margin-top: 10px;
   border-radius: 10px;
   height: 47px;
   overflow: hidden;
+
+  animation: meal_apparition 1s ease-in-out;
   transition: all 1s ease-in-out;
   &_title {
     font-family: $secondary-font;
