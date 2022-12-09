@@ -3,21 +3,3 @@
   flex-direction: column;
   justify-content: center;
 }
-
-@keyframes rotationcheck {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
-@keyframes meal_apparition {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}

@@ -1,10 +1,10 @@
 @import "Utils/variables";
 @import "Utils/utilities";
+@import "Utils/_Keyframes";
 @import "Pages/navigation";
 
 // Semantique
 body {
-  min-width: 320px;
   margin: auto;
   font-size: 10px;
   background-color: #f2f2f2;
@@ -37,10 +37,17 @@ section {
 }
 
 footer {
-  background-color: darken($fourth-color, 50%);
+  background-color: darken($fourth-color, 70%);
   @include flexbox;
   justify-content: space-between;
   padding-bottom: 20px;
+  margin-top: 65px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 
 // Navigation
@@ -70,6 +77,12 @@ footer {
     }
   }
 }
+.white_bar {
+  background-color: white;
+  padding-left: 100%;
+  padding-right: 100%;
+  padding-bottom: 5px;
+}
 
 // article 1
 
@@ -86,15 +99,17 @@ footer {
       rgba(255, 121, 218, 1) 16%,
       rgba(147, 86, 220, 1) 100%
     );
-    padding: 7px 50px 7px;
-    margin-top: 25px;
+    padding: 1px 50px 1px;
     box-shadow: -1px 9px 19px -6px rgba(0, 0, 0, 0.75);
     &---paragraphe {
       font-size: 15px;
       color: white;
+      text-align: center;
+      font-weight: 700;
     }
   }
 }
+
 // Titres
 
 h1 {
@@ -111,6 +126,16 @@ h2 {
 
 .title_h2 {
   font-weight: 400;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.reserved_h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 25px;
+  padding-bottom: 0;
 }
 
 h3 {
@@ -135,7 +160,10 @@ h4 {
 }
 
 .function {
+  font-size: 20px;
   margin-right: auto;
+  margin-bottom: 20px;
+  padding-bottom: 0;
 }
 
 .choice {
@@ -147,8 +175,11 @@ h4 {
   width: 250px;
   padding: 12px 5px;
   &_icone {
+    color: darken(#f2f2f2, 35%);
     display: flex;
-    padding: 16px;
+    padding: 13px;
+    padding-left: 20px;
+    font-size: 16px;
     &--number {
       color: white;
       background-color: $primary-color;
@@ -172,15 +203,25 @@ h4 {
   background-color: lighten($secondary-color, 23%);
   color: $primary-color;
 }
+
+.choice:hover .choice_icone {
+  color: $primary-color;
+}
+
 .shownav {
   color: black;
+  padding-left: 8px;
+  font-size: 13px;
+  padding-top: 14px;
 }
 .restaurant {
   @include flexbox;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-grow: 1;
   background-color: $primary-background;
-  height: 1273px;
+  height: 980px;
+  margin-left: 15px;
+  margin-right: 15px;
 
   font-family: $secondary-font;
   &_card {
@@ -189,6 +230,7 @@ h4 {
     position: relative;
     border-radius: 15px;
     &_description {
+      position: relative;
       width: 100%;
       height: 50px;
       display: flex;
@@ -197,12 +239,17 @@ h4 {
     }
   }
 }
+.heart_animation {
+  position: absolute;
+  left: 85%;
+  top: 20%;
+}
 .heart {
   position: absolute;
-  left: 87%;
-  top: 84%;
+  left: 0px;
+  top: 1px;
   font-size: 25px;
-  transition: opacity;
+  transition: opacity 1s ease-in-out;
   &:hover {
     opacity: 0;
   }
@@ -218,8 +265,6 @@ h4 {
     rgba(147, 86, 220, 1) 98%
   );
   position: absolute;
-  left: 278px;
-  top: 192px;
   font-size: 26px;
   border: 0;
   opacity: 0;
@@ -265,13 +310,17 @@ h4 {
   color: white;
   padding: 0;
   margin-left: 0;
+  margin-top: 25px;
+  font-weight: 500;
   &_propose {
     @include flexbox;
     justify-content: space-between;
     height: 100px;
+    color: white;
     &--line {
       padding: 0;
       margin: 0;
+      font-weight: 500;
     }
   }
 }
@@ -290,5 +339,5 @@ h4 {
   }
 }
 .footer_position {
-  margin-left: 10px;
+  margin-left: 20px;
 }
