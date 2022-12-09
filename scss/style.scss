@@ -56,6 +56,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: white;
   .navBar {
     display: flex;
     justify-content: center;
@@ -79,8 +80,6 @@ button {
 }
 .white_bar {
   background-color: white;
-  padding-left: 100%;
-  padding-right: 100%;
   padding-bottom: 5px;
 }
 
@@ -285,7 +284,7 @@ h4 {
   position: absolute;
   padding: 0;
   margin: 0;
-  left: 80%;
+  left: 70%;
   bottom: 80%;
   &_title {
     padding: 0;
