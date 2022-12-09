@@ -1,0 +1,94 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/Keyframes";
+@import "../Composants/button";
+
+// Page d'accueil
+// Footer
+footer {
+  @include background-footer;
+  @include flexbox;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-top: 65px;
+}
+
+.logofooter {
+  font-family: $primary-font;
+  color: $fifth-color;
+  padding: 0;
+  margin-left: 0;
+  margin-top: 25px;
+  font-weight: 500;
+  &_propose {
+    @include flexbox;
+    justify-content: space-between;
+    height: 100px;
+    color: $fifth-color;
+    &--line {
+      padding: 0;
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+}
+.become {
+  display: flex;
+  &_icone {
+    padding: 3px;
+    margin-right: 3px;
+  }
+}
+.partner {
+  display: flex;
+  &_icone {
+    padding: 3px;
+    margin-right: 3px;
+  }
+}
+.footer_position {
+  margin-left: 20px;
+}
+
+// Page des menus
+
+//   FOOTER
+footer {
+  @include background-footer;
+  @include flexbox;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.logofooter {
+  font-family: $primary-font;
+  color: white;
+  padding: 0;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  &_propose {
+    @include flexbox;
+    justify-content: space-between;
+    height: 100px;
+    &--line {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+.become {
+  display: flex;
+  &_icone {
+    padding: 3px;
+    margin-right: 3px;
+  }
+}
+.partner {
+  display: flex;
+  &_icone {
+    padding: 3px;
+    margin-right: 3px;
+  }
+}
+.footer_position {
+  margin-left: 10px;
+}

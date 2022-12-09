@@ -1,0 +1,88 @@
+// Page d'accueil
+
+header {
+  @include flexbox;
+}
+
+// Navigation
+
+.shownav {
+  color: $sixth-color;
+  padding-left: 8px;
+  font-size: 13px;
+  padding-top: 14px;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  .navBar {
+    display: flex;
+    justify-content: center;
+    background-color: darken($fourth-color, 20%);
+    background: linear-gradient(
+      180deg,
+      rgba(191, 191, 191, 1) 0%,
+      rgba(229, 229, 229, 1) 6%,
+      rgba(229, 229, 229, 1) 100%
+    );
+
+    font-weight: normal;
+    width: 100%;
+    font-family: $secondary-font;
+    &_localisation {
+      padding: 14px 4px;
+    }
+    &_description {
+    }
+  }
+}
+.white_bar {
+  padding-bottom: 5px;
+}
+
+.explorer {
+  font-family: $secondary-font;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+// Pages de menu
+
+// Header
+.headernavigation {
+  position: relative;
+}
+.headernav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  .logonav {
+    width: 100px;
+    align-self: center;
+  }
+  .headerlink {
+    margin-top: 10px;
+    height: 24px;
+    width: 133px;
+  }
+}
+
+.headerimage {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  margin-top: 13px;
+  z-index: 0;
+}
+
+.headerarrow {
+  position: absolute;
+  left: -36px;
+  font-size: 20px;
+  width: 100px;
+}

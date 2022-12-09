@@ -1,0 +1,27 @@
+@mixin flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin linear-gradient {
+  background-image: linear-gradient(
+    77deg,
+    rgba(255, 121, 218, 1) 0%,
+    rgba(147, 86, 220, 1) 52%,
+    rgba(147, 86, 220, 1) 98%
+  );
+}
+@mixin background-footer {
+  background-color: darken($fourth-color, 70%);
+}
+@mixin text-cut {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin box-shadow {
+  box-shadow: -1px 1px 43px -12px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 1px 43px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 43px -12px rgba(0, 0, 0, 0.75);
+}

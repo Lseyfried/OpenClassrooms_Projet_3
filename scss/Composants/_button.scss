@@ -1,0 +1,36 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/Keyframes";
+
+.explorer_btn {
+  border-radius: 35px;
+  background-color: $secondary-color;
+  @include linear-gradient;
+  padding: 1px 35px 1px;
+  box-shadow: -1px 9px 19px -6px rgba(0, 0, 0, 0.75);
+  &---paragraphe {
+    font-size: 15px;
+    color: $fifth-color;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.explorer {
+  font-family: $secondary-font;
+  display: flex;
+  flex-direction: column;
+  &_btn {
+    border-radius: 35px;
+    background-color: $secondary-color;
+    @include linear-gradient;
+    padding: 1px 50px 2px;
+    box-shadow: -1px 9px 19px -6px rgba(0, 0, 0, 0.75);
+    &---paragraphe {
+      font-size: 15px;
+      color: $fifth-color;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,7 +1,64 @@
+@import "Base/Police";
 @import "Utils/variables";
-@import "Utils/utilities";
-@import "Utils/_Keyframes";
+@import "Utils/mixins";
+@import "Utils/Keyframes";
+@import "Layout/header";
+@import "Composants/button.scss";
+@import "Layout/footer";
 @import "Pages/navigation";
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+  }
+  header {
+    width: 100%;
+  }
+  header .navigation .navBar {
+    width: auto;
+    background: $fourth-color;
+  }
+  .navigation {
+    justify-content: space-between;
+    background-color: $fourth-color;
+  }
+
+  article {
+    align-items: left;
+  }
+  article .reserved_h2 {
+    text-align: left;
+  }
+  article .title_h2 {
+    text-align: left;
+  }
+  body button {
+    align-items: flex-start;
+    margin: 0;
+  }
+  body .operation {
+    justify-content: left;
+    height: auto;
+  }
+  .responsive_filter {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  body .restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 625px;
+  }
+  article .choicerestaurant {
+    width: 40%;
+    height: 230px;
+  }
+}
+@media screen and (max-width: 1440px) {
+}
 
 // Semantique
 body {
@@ -22,12 +79,7 @@ a {
   margin-top: 15px;
 }
 
-header {
-  @include flexbox;
-}
-
 article {
-  align-items: center;
   background-color: $primary-background;
 }
 
@@ -36,78 +88,13 @@ section {
   background-color: white;
 }
 
-footer {
-  background-color: darken($fourth-color, 70%);
-  @include flexbox;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  margin-top: 65px;
-}
-
 button {
   display: flex;
   align-items: center;
   margin: auto;
 }
 
-// Navigation
-
-.navigation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: white;
-  .navBar {
-    display: flex;
-    justify-content: center;
-    background-color: darken($fourth-color, 20%);
-    background: linear-gradient(
-      180deg,
-      rgba(191, 191, 191, 1) 0%,
-      rgba(229, 229, 229, 1) 6%,
-      rgba(229, 229, 229, 1) 100%
-    );
-
-    font-weight: normal;
-    width: 100%;
-    font-family: $secondary-font;
-    &_localisation {
-      padding: 14px 4px;
-    }
-    &_description {
-    }
-  }
-}
-.white_bar {
-  background-color: white;
-  padding-bottom: 5px;
-}
-
 // article 1
-
-.explorer {
-  font-family: $secondary-font;
-  display: flex;
-  flex-direction: column;
-  &_btn {
-    border-radius: 35px;
-    background-color: $secondary-color;
-    background: linear-gradient(
-      168deg,
-      rgba(255, 121, 218, 1) 0%,
-      rgba(255, 121, 218, 1) 16%,
-      rgba(147, 86, 220, 1) 100%
-    );
-    padding: 1px 50px 1px;
-    box-shadow: -1px 9px 19px -6px rgba(0, 0, 0, 0.75);
-    &---paragraphe {
-      font-size: 15px;
-      color: white;
-      text-align: center;
-      font-weight: 700;
-    }
-  }
-}
 
 // Titres
 
@@ -150,6 +137,7 @@ h4 {
 
 // Fonctionnement
 .operation {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -173,14 +161,15 @@ h4 {
   position: relative;
   width: 250px;
   padding: 12px 5px;
+  margin-bottom: 26px;
   &_icone {
-    color: darken(#f2f2f2, 35%);
+    color: darken($fourth-color, 35%);
     display: flex;
     padding: 13px;
     padding-left: 20px;
     font-size: 16px;
     &--number {
-      color: white;
+      color: $fifth-color;
       background-color: $primary-color;
       display: flex;
       padding: 6px;
@@ -207,34 +196,33 @@ h4 {
   color: $primary-color;
 }
 
-.shownav {
-  color: black;
-  padding-left: 8px;
-  font-size: 13px;
-  padding-top: 14px;
-}
 .restaurant {
   @include flexbox;
   justify-content: space-between;
   flex-grow: 1;
   background-color: $primary-background;
-  height: 980px;
+  height: 1040px;
   margin-left: 15px;
   margin-right: 15px;
 
   font-family: $secondary-font;
   &_card {
     @include flexbox;
-    width: 100%;
+    @include box-shadow;
+    width: clamp(293px, 100%, 881px);
     position: relative;
     border-radius: 15px;
     &_description {
       position: relative;
-      width: 100%;
-      height: 50px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      margin-left: 11px;
+      &---line {
+        font-weight: 300;
+        padding-left: 0;
+        padding-top: 5px;
+      }
     }
   }
 }
@@ -257,12 +245,8 @@ h4 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(
-    77deg,
-    rgba(255, 121, 218, 1) 0%,
-    rgba(147, 86, 220, 1) 52%,
-    rgba(147, 86, 220, 1) 98%
-  );
+  @include linear-gradient;
+
   position: absolute;
   font-size: 26px;
   border: 0;
@@ -297,46 +281,13 @@ h4 {
 }
 .restaurant_descrip {
   padding: 0;
+  padding-top: 8px;
 }
 
 .choicerestaurant {
-  width: 100%;
+  width: clamp(293px, 100%, 881px);
 }
 
-// Footer
-.logofooter {
-  font-family: $primary-font;
-  color: white;
-  padding: 0;
-  margin-left: 0;
-  margin-top: 25px;
-  font-weight: 500;
-  &_propose {
-    @include flexbox;
-    justify-content: space-between;
-    height: 100px;
-    color: white;
-    &--line {
-      padding: 0;
-      margin: 0;
-      font-weight: 500;
-    }
-  }
-}
-.become {
-  display: flex;
-  &_icone {
-    padding: 3px;
-    margin-right: 3px;
-  }
-}
-.partner {
-  display: flex;
-  &_icone {
-    padding: 3px;
-    margin-right: 3px;
-  }
-}
-.footer_position {
-  margin-left: 20px;
+.contact_link {
+  color: $fifth-color;
 }
