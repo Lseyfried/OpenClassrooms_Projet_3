@@ -3,21 +3,23 @@
 @import "Utils/mixins";
 @import "Utils/Keyframes";
 @import "Layout/header";
-@import "Composants/button.scss";
+@import "Composants/button";
 @import "Layout/footer";
 @import "Pages/navigation";
 
 @media screen and (min-width: 1024px) {
   body {
-    padding-left: 15px;
-    padding-right: 15px;
     margin: auto;
   }
   header {
     width: 100%;
   }
+  .white_bar {
+    padding-left: 15px;
+  }
   header .navigation .navBar {
     width: auto;
+    padding-right: 15px;
     background: $fourth-color;
   }
   .navigation {
@@ -30,13 +32,16 @@
   }
   article .reserved_h2 {
     text-align: left;
+    padding-left: 0;
   }
   article .title_h2 {
     text-align: left;
+    padding-left: 0;
   }
   body button {
     align-items: flex-start;
     margin: 0;
+    padding-left: 15px;
   }
   body .operation {
     justify-content: left;
@@ -51,10 +56,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     height: 625px;
+    justify-content: space-around;
   }
   article .choicerestaurant {
     width: 40%;
     height: 230px;
+  }
+  .explorer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  article .new {
+    left: 80%;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -88,11 +101,11 @@ section {
   background-color: white;
 }
 
-button {
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
+// button {
+//   display: flex;
+//   align-items: center;
+//   margin: auto;
+// }
 
 // article 1
 

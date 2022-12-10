@@ -3,6 +3,15 @@
 @import "../Utils/Keyframes";
 @import "../Composants/button";
 
+@media all and (min-width: 1024px) {
+  .logofooter {
+    text-align: center;
+    &_propose {
+      align-items: center;
+    }
+  }
+}
+
 // Page d'accueil
 // Footer
 footer {

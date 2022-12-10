@@ -2,6 +2,25 @@
 @import "../Utils/mixins";
 @import "../Utils/Keyframes";
 
+// bouton navigation
+
+button {
+  border: 0;
+}
+
+.bouton {
+  margin-bottom: 20px;
+}
+
+// bouton style
+button {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+// général
+
 .explorer_btn {
   border-radius: 35px;
   background-color: $secondary-color;
@@ -23,9 +42,12 @@
   &_btn {
     border-radius: 35px;
     background-color: $secondary-color;
+    font-family: $secondary-font;
+    cursor: pointer;
     @include linear-gradient;
     padding: 1px 50px 2px;
     box-shadow: -1px 9px 19px -6px rgba(0, 0, 0, 0.75);
+    transition: opacity 1.5s ease-in-out;
     &---paragraphe {
       font-size: 15px;
       color: $fifth-color;
@@ -33,4 +55,8 @@
       font-weight: 700;
     }
   }
+}
+
+.explorer_btn:hover {
+  opacity: 0.7;
 }
