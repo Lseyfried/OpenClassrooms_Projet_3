@@ -4,6 +4,7 @@
 @import "Utils/Keyframes";
 @import "Layout/header";
 @import "Composants/button";
+@import "Composants/coeur";
 @import "Layout/footer";
 @import "Pages/navigation";
 
@@ -70,8 +71,6 @@
     left: 80%;
   }
 }
-@media screen and (max-width: 1440px) {
-}
 
 // Semantique
 body {
@@ -100,13 +99,6 @@ section {
   @include flexbox;
   background-color: white;
 }
-
-// button {
-//   display: flex;
-//   align-items: center;
-//   margin: auto;
-// }
-
 // article 1
 
 // Titres
@@ -237,36 +229,6 @@ h4 {
         padding-top: 5px;
       }
     }
-  }
-}
-.heart_animation {
-  position: absolute;
-  left: 85%;
-  top: 20%;
-}
-.heart {
-  position: absolute;
-  left: 0px;
-  top: 1px;
-  font-size: 25px;
-  transition: opacity 1s ease-in-out;
-  &:hover {
-    opacity: 0;
-  }
-}
-.heart_color {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  @include linear-gradient;
-
-  position: absolute;
-  font-size: 26px;
-  border: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  &:hover {
-    opacity: 1;
   }
 }
 

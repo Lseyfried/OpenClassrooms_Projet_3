@@ -1,0 +1,114 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/Keyframes";
+
+// Accueil
+
+.heart_animation {
+  position: absolute;
+  left: 85%;
+  top: 20%;
+}
+.heart {
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  font-size: 25px;
+  transition: opacity 1s ease-in-out;
+  &:hover {
+    opacity: 0;
+  }
+}
+.heart_color {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  @include linear-gradient;
+
+  position: absolute;
+  font-size: 26px;
+  border: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+//   Dans les menus
+
+.headerheart {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  .title_one {
+    font-family: $primary-font;
+    font-size: 24px;
+    align-self: center;
+    font-weight: bold;
+    position: absolute;
+    top: 296px;
+    right: -1px;
+    background-color: $fourth-color;
+    z-index: 1;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    padding-top: 19px;
+    padding-bottom: 22px;
+    left: 0px;
+    padding-left: 30px;
+  }
+}
+.heartpage {
+  position: absolute;
+  left: 90%;
+  bottom: 3%;
+  z-index: 1;
+  font-size: 16px;
+  right: 1%;
+}
+
+.heart_color--nav {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  @include linear-gradient;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  z-index: 1;
+  font-size: 18px;
+  border: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.heart_color--navpalette {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  @include linear-gradient;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 1;
+  font-size: 17px;
+  border: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.heartlanote {
+  position: absolute;
+  left: 90%;
+  bottom: 3%;
+  z-index: 1;
+  font-size: 16px;
+  right: 1%;
+}
