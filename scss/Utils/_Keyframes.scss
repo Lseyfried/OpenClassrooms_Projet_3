@@ -23,3 +23,60 @@
     opacity: 1;
   }
 }
+
+@keyframes loader_disapear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes item_move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes color_change---one {
+  0% {
+    color: $primary-color;
+  }
+  50% {
+    color: $secondary-color;
+  }
+  100% {
+    color: $tertiary-color;
+  }
+}
+
+@keyframes color_change---two {
+  0% {
+    color: $secondary-color;
+  }
+  50% {
+    color: $tertiary-color;
+  }
+  100% {
+    color: $primary-color;
+  }
+}
+
+@keyframes color_change---three {
+  0% {
+    color: $tertiary-color;
+  }
+  50% {
+    color: $primary-color;
+  }
+  100% {
+    color: $secondary-color;
+  }
+}
