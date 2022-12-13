@@ -1,9 +1,4 @@
-@import "../Utils/variables";
-@import "../Utils/mixins";
-@import "../Utils/Keyframes";
-@import "../Composants/button";
-
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   .logofooter {
     text-align: center;
     &_propose {
@@ -101,6 +96,6 @@ footer {
 .footer_position {
   margin-left: 10px;
 }
-.reponsive_footer {
-  display: flex;
+.contact_link {
+  color: $fifth-color;
 }

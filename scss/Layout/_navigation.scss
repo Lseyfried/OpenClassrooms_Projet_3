@@ -1,0 +1,135 @@
+// @import "../Base/Police";
+// @import "../Utils/variables";
+// @import "../Utils/mixins";
+// @import "../Utils/_Keyframes";
+// @import "../Layout/header";
+// @import "../Components/heart";
+// @import "../Components/button";
+// @import "../Layout/footer";
+
+// Menu et home
+
+// nav dans layout
+// dans pages que proprièté dans une page
+// faire éclaircir l'ombre du bouton
+
+@media screen and (min-width: 768px) {
+  .responsive_meal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .entries {
+    width: 33%;
+  }
+  .hot_meal {
+    width: 33%;
+  }
+  .dessert {
+    width: 33%;
+  }
+}
+
+// Page
+.article_border {
+  @include flexbox;
+  position: relative;
+}
+
+.dessert {
+  margin-bottom: 30px;
+}
+.entertitle {
+  align-self: start;
+  width: 12px;
+  padding-left: 0;
+  .title_enter {
+    margin: 10px;
+    border-bottom: 2px $tertiary-color solid;
+    padding-bottom: 5px;
+    &--plat {
+      margin-left: 70px;
+    }
+  }
+}
+
+// .meal {
+//   @for $i from 1 through 10 {
+//     &:nth-child(#{$i}) {
+//       animation-delay: 100ms * $i;
+//     }
+//   }
+//   margin-top: 10px;
+//   border-radius: 10px;
+//   height: 47px;
+//   overflow: hidden;
+//   border-radius: 10px;
+//   transition: transform 0.5s ease;
+//   margin-right: 5px;
+//   margin-left: 5px;
+//   @include box-shadow;
+
+//   animation-name: meal_apparition_opacity, meal_apparition_translate;
+//   animation-duration: 1s;
+//   animation-timing-function: ease-in-out;
+//   animation-fill-mode: both;
+
+//   &_title {
+//     font-family: $secondary-font;
+//     margin-left: 15px;
+//     padding: 0;
+//     @include text-cut;
+//     &--description {
+//       padding: 0;
+//       margin-left: 15px;
+//       font-size: 15px;
+//       font-weight: 400;
+//       @include text-cut;
+//     }
+//   }
+// }
+
+// .meal:hover .apparition_meal {
+//   margin: 0;
+//   i {
+//     animation: rotationcheck 1s ease-in-out;
+//   }
+// }
+
+// .meal_range {
+//   @include text-cut;
+//   height: 100%;
+//   width: calc(100% - 96px);
+//   padding: 5px 20px 5px 7px;
+// }
+
+// .apparition_meal {
+//   display: flex;
+//   align-items: center;
+//   overflow: hidden;
+//   border-top-right-radius: 10px;
+//   border-bottom-right-radius: 10px;
+//   background-color: $tertiary-color;
+//   margin-right: -75px;
+//   width: 73px;
+//   transition: all 0.5s ease-in-out;
+// }
+
+// .fa-circle-check {
+//   font-size: 20px;
+//   padding: 20px;
+//   color: $fifth-color;
+// }
+
+// .title_prix {
+//   display: flex;
+//   justify-content: space-between;
+//   @include text-cut;
+//   .prix {
+//     font-size: 15px;
+//     display: flex;
+//     align-self: center;
+//     padding-left: 25px;
+//     padding-right: 10px;
+//   }
+// }

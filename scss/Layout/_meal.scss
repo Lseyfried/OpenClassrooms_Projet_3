@@ -1,13 +1,4 @@
-@import "../Base/Police";
-@import "../Utils/variables";
-@import "../Utils/mixins";
-@import "../Utils/_Keyframes";
-@import "../Layout/header";
-@import "../Composants/coeur";
-@import "../Composants/button";
-@import "../Layout/footer";
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .responsive_meal {
     display: flex;
     justify-content: space-between;
@@ -21,29 +12,6 @@
   }
   .dessert {
     width: 33%;
-  }
-}
-
-// Page
-.article_border {
-  @include flexbox;
-  position: relative;
-}
-
-.dessert {
-  margin-bottom: 30px;
-}
-.entertitle {
-  align-self: start;
-  width: 12px;
-  padding-left: 0;
-  .title_enter {
-    margin: 10px;
-    border-bottom: 2px $tertiary-color solid;
-    padding-bottom: 5px;
-    &--plat {
-      margin-left: 70px;
-    }
   }
 }
 

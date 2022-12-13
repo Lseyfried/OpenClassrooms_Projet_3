@@ -1,0 +1,69 @@
+@media screen and (min-width: 768px) {
+  .responsive_filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+  }
+}
+
+.operation {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 365px;
+  background-color: white;
+  margin-top: 25px;
+}
+
+.function {
+  font-size: 20px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.choice {
+  display: flex;
+  background-color: $fourth-color;
+  border: 1px $fourth-color solid;
+  border-radius: 20px;
+  position: relative;
+  width: 250px;
+  padding: 12px 5px;
+  margin-bottom: 26px;
+  &_icone {
+    color: darken($fourth-color, 35%);
+    display: flex;
+    padding: 13px;
+    padding-left: 20px;
+    font-size: 16px;
+    &--number {
+      color: $fifth-color;
+      background-color: $primary-color;
+      display: flex;
+      padding: 6px;
+      border-radius: 195px 195px 195px 195px;
+      -webkit-border-radius: 195px 195px 195px 195px;
+      -moz-border-radius: 195px 195px 195px 195px;
+      position: absolute;
+      left: -10px;
+      bottom: 20px;
+    }
+  }
+}
+
+.last {
+  margin-bottom: 25px;
+}
+
+.choice:hover {
+  background-color: lighten($secondary-color, 23%);
+  color: $primary-color;
+}
+
+.choice:hover .choice_icone {
+  color: $primary-color;
+}

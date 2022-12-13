@@ -1,11 +1,10 @@
-@import "../Utils/variables";
-@import "../Utils/mixins";
-@import "../Utils/Keyframes";
-
 // bouton navigation
 
-button {
-  border: 0;
+@media screen and (min-width: 768px) {
+  body button {
+    margin: auto;
+    padding-left: 15px;
+  }
 }
 
 .bouton {
@@ -17,6 +16,7 @@ button {
   display: flex;
   align-items: center;
   margin: auto;
+  border: 0;
 }
 
 // général
@@ -47,7 +47,13 @@ button {
     @include linear-gradient;
     padding: 1px 50px 2px;
     box-shadow: -1px 9px 19px -6px rgba(0, 0, 0, 0.75);
-    transition: opacity 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+      box-shadow: -3px 1px 27px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -3px 1px 27px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -3px 1px 27px 0px rgba(0, 0, 0, 0.75);
+    }
     &---paragraphe {
       font-size: 15px;
       color: $fifth-color;
@@ -55,8 +61,4 @@ button {
       font-weight: 700;
     }
   }
-}
-
-.explorer_btn:hover {
-  opacity: 0.7;
 }
