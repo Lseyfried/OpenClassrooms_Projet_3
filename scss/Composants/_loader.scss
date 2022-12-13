@@ -4,7 +4,6 @@
 @import "../Utils/Keyframes";
 
 .loader {
-  display: grid;
   display: flex;
   align-items: center;
   place-content: center;
@@ -15,82 +14,34 @@
   inset: 0;
   z-index: 2;
   opacity: 0.5;
-  animation: loader_disapear 1s forwards 4s ease;
+  animation: loader_disapear 1s forwards 3s ease;
+
   &_items {
     display: flex;
 
     font-size: 55px;
+
+    &---one {
+      margin: 15px;
+      color: $secondary-color;
+      animation: color_change---one 2s linear infinite,
+        item_move 2s ease-in-out infinite;
+
+      animation-delay: 100ms;
+    }
+    &---two {
+      margin: 15px;
+      color: $primary-color;
+      animation: color_change---two 2s linear infinite,
+        item_move 2s ease-in-out infinite;
+      animation-delay: 300ms;
+    }
+    &---three {
+      margin: 15px;
+      color: $tertiary-color;
+      animation: item_move 2s ease-in-out infinite,
+        color_change---one 2s linear infinite;
+      animation-delay: 500ms;
+    }
   }
 }
-
-.loader_items---one {
-  margin: 15px;
-  color: $secondary-color;
-  animation: color_change---one 2s linear infinite,
-    item_move 2s ease-in-out infinite;
-  animation-delay: 100ms;
-}
-
-.loader_items---two {
-  margin: 15px;
-  color: $primary-color;
-  animation: color_change---two 2s linear infinite,
-    item_move 2s ease-in-out infinite;
-  animation-delay: 300ms;
-}
-
-.loader_items---three {
-  margin: 15px;
-  color: $tertiary-color;
-  animation: item_move 2s ease-in-out infinite,
-    color_change---one 2s linear infinite;
-  animation-delay: 500ms;
-}
-
-// @keyframes item_move {
-//   0% {
-//     transform: translateY(0);
-//   }
-//   50% {
-//     transform: translateY(-100px);
-//   }
-//   100% {
-//     transform: translateY(0);
-//   }
-// }
-
-// @keyframes color_change---one {
-//   0% {
-//     color: $primary-color;
-//   }
-//   50% {
-//     color: $secondary-color;
-//   }
-//   100% {
-//     color: $tertiary-color;
-//   }
-// }
-
-// @keyframes color_change---two {
-//   0% {
-//     color: $secondary-color;
-//   }
-//   50% {
-//     color: $tertiary-color;
-//   }
-//   100% {
-//     color: $primary-color;
-//   }
-// }
-
-// @keyframes color_change---three {
-//   0% {
-//     color: $tertiary-color;
-//   }
-//   50% {
-//     color: $primary-color;
-//   }
-//   100% {
-//     color: $secondary-color;
-//   }
-// }
