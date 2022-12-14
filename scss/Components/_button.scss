@@ -16,6 +16,7 @@ button {
   align-items: center;
   margin: auto;
   border: 0;
+  padding: 19px 56px 19px;
 }
 
 // général
@@ -24,12 +25,11 @@ button {
   border-radius: 35px;
   background-color: $secondary-color;
   @include linear-gradient;
-  padding: 1px 35px 1px;
+
   box-shadow: -1px 9px 19px -6px rgba(0, 0, 0, 0.75);
   &---paragraphe {
     font-size: 15px;
     color: $fifth-color;
-    text-align: center;
     font-weight: 700;
   }
 }
@@ -44,7 +44,6 @@ button {
     font-family: $secondary-font;
     cursor: pointer;
     @include linear-gradient;
-    padding: 1px 50px 2px;
     @include box-shadow_button;
     transition: all 1.5s ease-in-out;
     &:hover {
@@ -54,7 +53,6 @@ button {
     &---paragraphe {
       font-size: 15px;
       color: $fifth-color;
-      text-align: center;
       font-weight: 700;
     }
   }

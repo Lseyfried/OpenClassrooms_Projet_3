@@ -1,13 +1,13 @@
 @media screen and (min-width: 768px) {
   body .restaurant {
-    flex-direction: row;
     flex-wrap: wrap;
     height: 625px;
     justify-content: space-around;
   }
   article .choicerestaurant {
     width: 40%;
-    height: 230px;
+    height: 246px;
+    margin-bottom: 20px;
   }
 }
 
@@ -19,7 +19,7 @@
   height: 1040px;
   margin-left: 15px;
   margin-right: 15px;
-
+  height: 1110px;
   font-family: $secondary-font;
   &_card {
     @include flexbox;
@@ -71,4 +71,14 @@
 
 .choicerestaurant {
   width: clamp(293px, 100%, 881px);
+}
+
+.choice_article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.marge {
+  margin-bottom: 20px;
 }

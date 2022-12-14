@@ -1,40 +1,31 @@
-// @import "../Base/Police";
-// @import "../Utils/variables";
-// @import "../Utils/mixins";
-// @import "../Utils/_Keyframes";
-// @import "../Layout/header";
-// @import "../Components/heart";
-// @import "../Components/button";
-// @import "../Layout/footer";
-
 // Menu et home
 
 // nav dans layout
 // dans pages que proprièté dans une page
 // faire éclaircir l'ombre du bouton
 
-@media screen and (min-width: 768px) {
-  .responsive_meal {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-  }
-  .entries {
-    width: 33%;
-  }
-  .hot_meal {
-    width: 33%;
-  }
-  .dessert {
-    width: 33%;
-  }
-}
+// @media screen and (min-width: 768px) {
+//   .responsive_meal {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 25px;
+//   }
+//   .entries {
+//     width: 33%;
+//   }
+//   .hot_meal {
+//     width: 33%;
+//   }
+//   .dessert {
+//     width: 33%;
+//   }
+// }
 
 // Page
-.article_border {
-  @include flexbox;
-  position: relative;
-}
+// .article_border {
+//   @include flexbox;
+//   position: relative;
+// }
 
 .dessert {
   margin-bottom: 30px;
