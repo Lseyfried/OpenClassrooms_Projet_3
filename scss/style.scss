@@ -3,10 +3,11 @@
 @import "Utils/mixins";
 @import "Utils/Keyframes";
 @import "Layout/semantics";
-@import "Layout/header";
-@import "Pages/choice";
-@import "Pages/operation";
 @import "Layout/meal";
+@import "Layout/header";
+
+@import "Pages/operation";
+@import "Pages/choice";
 @import "Components/button";
 @import "Components/heart";
 @import "Layout/footer";

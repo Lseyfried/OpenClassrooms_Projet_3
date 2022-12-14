@@ -1,4 +1,13 @@
 // Accueil
+@media screen and (min-width: 768px) {
+  .hear:hover {
+    opacity: 0;
+  }
+
+  .heart_color:hover {
+    opacity: 1;
+  }
+}
 
 .heart_animation {
   position: absolute;
@@ -11,7 +20,7 @@
   top: 1px;
   font-size: 25px;
   transition: opacity 1s ease-in-out;
-  &:hover {
+  &:active {
     opacity: 0;
   }
 }
@@ -26,7 +35,7 @@
   border: 0;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  &:hover {
+  &:active {
     opacity: 1;
   }
 }

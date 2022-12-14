@@ -25,3 +25,15 @@
   -webkit-box-shadow: -1px 1px 43px -12px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 43px -12px rgba(0, 0, 0, 0.75);
 }
+
+@mixin box-shadow_button {
+  box-shadow: -15px 22px 20px -17px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -15px 22px 20px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -15px 22px 20px -17px rgba(0, 0, 0, 0.75);
+}
+
+@mixin box-shadow_button---hover {
+  box-shadow: -6px 22px 29px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -6px 22px 29px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -6px 22px 29px -7px rgba(0, 0, 0, 0.75);
+}

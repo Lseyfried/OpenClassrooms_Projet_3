@@ -25,8 +25,29 @@
 }
 
 @keyframes loader_disapear {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loader_canceled {
   to {
-    transform: scale(0);
+    z-index: -1;
+  }
+}
+
+@keyframes site_appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

@@ -13,6 +13,12 @@
   .dessert {
     width: 33%;
   }
+  .meal:hover .apparition_meal {
+    margin: 0;
+    i {
+      animation: rotationcheck 1s ease-in-out;
+    }
+  }
 }
 
 .meal {
@@ -54,7 +60,7 @@
 .meal:hover .apparition_meal {
   margin: 0;
   i {
-    animation: rotationcheck 1s ease-in-out;
+    animation: rotationcheck 1s forwards ease-in-out;
   }
 }
 

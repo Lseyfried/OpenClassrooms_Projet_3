@@ -9,7 +9,8 @@
   inset: 0;
   z-index: 2;
   opacity: 0.5;
-  animation: loader_disapear 1s forwards 3s linear;
+  animation: loader_disapear 1s forwards 3s linear,
+    loader_canceled 1s forwards 3.5s linear;
 
   &_items {
     display: flex;
@@ -39,4 +40,8 @@
       animation-delay: 500ms;
     }
   }
+}
+
+.opacity_body {
+  animation: site_appear 3s linear;
 }
