@@ -20,7 +20,10 @@
     }
   }
 }
-
+.responsive_meal {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .meal {
   @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
