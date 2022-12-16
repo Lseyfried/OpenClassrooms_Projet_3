@@ -21,9 +21,9 @@
 }
 
 @mixin box-shadow {
-  box-shadow: -1px 1px 43px -12px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -1px 1px 43px -12px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 43px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 7px 35px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 7px 35px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 7px 35px -9px rgba(0, 0, 0, 0.75);
 }
 
 @mixin box-shadow_button {

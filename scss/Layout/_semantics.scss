@@ -21,6 +21,10 @@ body {
   font-family: $secondary-font;
 }
 
+main {
+  padding-top: 45px;
+  background-color: lighten($color: $primary-background, $amount: 2%);
+}
 a {
   text-decoration: none;
   color: black;

@@ -20,8 +20,9 @@
   top: 1px;
   font-size: 25px;
   transition: opacity 1s ease-in-out;
-  &:active {
+  &:hover {
     opacity: 0;
+    cursor: pointer;
   }
 }
 .heart_color {
@@ -35,8 +36,9 @@
   border: 0;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  &:active {
+  &:hover {
     opacity: 1;
+    cursor: pointer;
   }
 }
 
@@ -52,9 +54,9 @@
     align-self: center;
     font-weight: bold;
     position: absolute;
-    top: 296px;
+    top: 155px;
     right: 0px;
-    background-color: $fourth-color;
+    background-color: lighten($color: $primary-background, $amount: 2%);
     z-index: 1;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
@@ -68,10 +70,11 @@
 .heartpage {
   position: absolute;
   left: 90%;
-  bottom: -8px;
+  bottom: -23px;
   z-index: 1;
   font-size: 16px;
   right: 31px;
+  width: 16px;
 }
 
 .heart_color--nav {
@@ -89,6 +92,7 @@
   transition: opacity 1s ease-in-out;
   &:hover {
     opacity: 1;
+    cursor: pointer;
   }
 }
 
@@ -107,13 +111,14 @@
   transition: opacity 1s ease-in-out;
   &:hover {
     opacity: 1;
+    cursor: pointer;
   }
 }
 
 .heartlanote {
   position: absolute;
   left: 90%;
-  bottom: -10px;
+  bottom: -24px;
   z-index: 1;
   font-size: 16px;
   right: 32px;

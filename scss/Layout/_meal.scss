@@ -29,12 +29,13 @@
   }
   margin-top: 10px;
   border-radius: 10px;
-  height: 47px;
+  height: 66px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 15px;
   transition: transform 0.5s ease;
   margin-right: 5px;
   margin-left: 5px;
+  cursor: pointer;
   @include box-shadow;
 
   animation-name: meal_apparition_opacity, meal_apparition_translate;
@@ -44,15 +45,18 @@
 
   &_title {
     font-family: $secondary-font;
-    margin-left: 15px;
+    margin-left: 5px;
     padding: 0;
     @include text-cut;
+    margin-top: 7px;
+    margin-bottom: 6px;
     &--description {
       padding: 0;
-      margin-left: 15px;
+      margin-left: 5px;
       font-size: 15px;
       font-weight: 400;
       @include text-cut;
+      margin-bottom: 6px;
     }
   }
 }
@@ -99,5 +103,35 @@
     align-self: center;
     padding-left: 25px;
     padding-right: 10px;
+    margin-top: auto;
+    margin-bottom: 8px;
+    font-weight: bold;
   }
+}
+.dessert {
+  margin-bottom: 30px;
+}
+.entertitle {
+  align-self: start;
+  width: 12px;
+  padding-left: 0;
+  font-weight: 400;
+  .title_enter {
+    margin: 10px;
+    border-bottom: 2px $tertiary-color solid;
+    padding-bottom: 5px;
+    &--plat {
+      margin-left: 70px;
+    }
+  }
+}
+
+.entries {
+  background-color: lighten($color: $primary-background, $amount: 2%);
+}
+.hot_meal {
+  background-color: lighten($color: $primary-background, $amount: 2%);
+}
+.dessert {
+  background-color: lighten($color: $primary-background, $amount: 2%);
 }

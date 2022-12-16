@@ -16,7 +16,7 @@ footer {
   @include flexbox;
   justify-content: space-between;
   padding-bottom: 20px;
-  margin-top: 65px;
+  margin-top: 50px;
 }
 
 .logofooter {
@@ -24,13 +24,14 @@ footer {
   color: $fifth-color;
   padding: 0;
   margin-left: 0;
-  margin-top: 25px;
+  margin-top: 20px;
   font-weight: 500;
   &_propose {
     @include flexbox;
     justify-content: space-between;
     height: 100px;
     color: $fifth-color;
+    margin-left: 7px;
     &--line {
       padding: 0;
       margin: 0;

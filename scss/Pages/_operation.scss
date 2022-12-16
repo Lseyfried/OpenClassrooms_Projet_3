@@ -12,7 +12,6 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 365px;
   background-color: white;
   margin-top: 25px;
@@ -23,17 +22,19 @@
   margin-right: auto;
   margin-bottom: 20px;
   padding-bottom: 0;
+  margin-top: 23px;
 }
 
 .choice {
   display: flex;
   background-color: $fourth-color;
-  border: 1px $fourth-color solid;
   border-radius: 20px;
   position: relative;
   width: 250px;
+  height: auto;
   padding: 12px 5px;
   margin-bottom: 26px;
+  @include box-shadow;
   &_icone {
     color: darken($fourth-color, 35%);
     display: flex;
@@ -60,7 +61,8 @@
 }
 
 .choice:hover {
-  background-color: lighten($secondary-color, 23%);
+  cursor: pointer;
+  background-color: lighten($secondary-color, 20%);
   color: $primary-color;
 }
 
