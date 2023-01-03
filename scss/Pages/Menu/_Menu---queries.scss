@@ -1,0 +1,14 @@
+@media screen and (min-width: 768px) {
+  body .restaurant {
+    flex-wrap: wrap;
+    height: 625px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  article .choicerestaurant {
+    width: 40%;
+    height: 243px;
+    margin-bottom: 20px;
+  }
+}

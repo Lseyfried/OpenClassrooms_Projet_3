@@ -1,0 +1,9 @@
+@media screen and (min-width: 768px) {
+  .responsive_filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+  }
+}

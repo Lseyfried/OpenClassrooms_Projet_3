@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%;
+  }
+  .white_bar {
+    display: flex;
+    align-self: center;
+  }
+  header .navigation .navBar {
+    align-content: center;
+    // background: $fourth-color;
+  }
+  .navigation {
+    justify-content: space-between;
+    flex-direction: column;
+    // background-color: $fourth-color;
+  }
+  .explorer {
+    align-items: center;
+  }
+}

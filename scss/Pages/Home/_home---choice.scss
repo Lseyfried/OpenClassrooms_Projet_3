@@ -1,30 +1,3 @@
-@media screen and (min-width: 768px) {
-  .responsive_filter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 90%;
-    align-items: center;
-  }
-}
-
-.operation {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 365px;
-  background-color: white;
-  margin-top: 25px;
-}
-
-.function {
-  font-size: 20px;
-  margin-right: auto;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  margin-top: 23px;
-}
-
 .choice {
   display: flex;
   background-color: $fourth-color;
@@ -54,18 +27,4 @@
       bottom: 20px;
     }
   }
-}
-
-.last {
-  margin-bottom: 25px;
-}
-
-.choice:hover {
-  cursor: pointer;
-  background-color: lighten($secondary-color, 20%);
-  color: $primary-color;
-}
-
-.choice:hover .choice_icone {
-  color: $primary-color;
 }

@@ -1,0 +1,5 @@
+.choice:hover {
+  cursor: pointer;
+  background-color: lighten($secondary-color, 20%);
+  color: $primary-color;
+}

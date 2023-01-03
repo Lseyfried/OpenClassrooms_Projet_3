@@ -1,0 +1,10 @@
+@media all and (min-width: 768px) {
+  .logofooter {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    &_propose {
+      align-items: center;
+    }
+  }
+}

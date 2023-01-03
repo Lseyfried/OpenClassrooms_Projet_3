@@ -1,0 +1,42 @@
+footer {
+  @include background-footer;
+  @include flexbox;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.logofooter {
+  font-family: $primary-font;
+  color: white;
+  padding: 0;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  &_propose {
+    @include flexbox;
+    justify-content: space-between;
+    height: 100px;
+    &--line {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+.become {
+  display: flex;
+  &_icone {
+    padding: 3px;
+    margin-right: 3px;
+  }
+}
+.partner {
+  display: flex;
+  &_icone {
+    padding: 3px;
+    margin-right: 3px;
+  }
+}
+.footer_position {
+  margin-left: 10px;
+}
+.contact_link {
+  color: $fifth-color;
+}
