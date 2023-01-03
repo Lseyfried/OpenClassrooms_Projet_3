@@ -1,0 +1,17 @@
+.entertitle {
+  align-self: start;
+  width: 12px;
+  padding-left: 0;
+  font-weight: 400;
+  .title_enter {
+    margin: 10px;
+    border-bottom: 2px $tertiary-color solid;
+    padding-bottom: 5px;
+    &--plat {
+      margin-left: 70px;
+    }
+    &--platleft {
+      margin-left: 10px;
+    }
+  }
+}

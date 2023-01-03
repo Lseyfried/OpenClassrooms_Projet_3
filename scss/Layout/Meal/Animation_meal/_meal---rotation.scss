@@ -1,0 +1,11 @@
+.meal:hover .apparition_meal {
+  margin: 0;
+  i {
+    animation: rotationcheck 1s forwards ease-in-out;
+  }
+}
+.fa-circle-check {
+  font-size: 20px;
+  padding: 20px;
+  color: $fifth-color;
+}

@@ -1,0 +1,39 @@
+.meal {
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: 100ms * $i;
+    }
+  }
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 66px;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+  // margin-right: 5px;
+  // margin-left: 5px;
+  cursor: pointer;
+  @include box-shadow;
+
+  animation-name: meal_apparition_opacity, meal_apparition_translate;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+
+  &_title {
+    font-family: $secondary-font;
+    margin-left: 5px;
+    padding: 0;
+    @include text-cut;
+    margin-top: 7px;
+    margin-bottom: 6px;
+    &--description {
+      padding: 0;
+      margin-left: 5px;
+      font-size: 15px;
+      font-weight: 400;
+      @include text-cut;
+      margin-bottom: 6px;
+    }
+  }
+}

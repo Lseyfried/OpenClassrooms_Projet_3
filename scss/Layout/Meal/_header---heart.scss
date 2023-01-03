@@ -1,0 +1,23 @@
+.headerheart {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  .title_one {
+    font-family: $primary-font;
+    font-size: 24px;
+    align-self: center;
+    font-weight: bold;
+    position: absolute;
+    top: 155px;
+    right: 0px;
+    background-color: lighten($color: $primary-background, $amount: 2%);
+    z-index: 1;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    padding-top: 19px;
+    padding-bottom: 22px;
+    left: -1px;
+    bottom: -1px;
+    padding-left: 30px;
+  }
+}

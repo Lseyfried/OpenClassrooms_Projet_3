@@ -4,9 +4,9 @@
   flex-grow: 1;
   background-color: $primary-background;
 
-  margin-left: 15px;
-  margin-right: 15px;
-  height: 1110px;
+  // margin-left: 15px;
+  // margin-right: 15px;
+  height: 1145px;
   font-family: $secondary-font;
   &_card {
     @include flexbox;
