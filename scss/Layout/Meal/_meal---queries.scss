@@ -1,19 +1,25 @@
 @media screen and (min-width: 768px) {
+  .entertitle .title_enter--platleft {
+    margin-left: 1px;
+  }
+  .entertitle .title_enter--plat {
+    margin-left: 1px;
+  }
   .responsive_meal {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 25px;
     margin-left: 0;
     margin-right: 0;
   }
   .entries {
-    width: 33%;
+    width: 32%;
   }
   .hot_meal {
-    width: 33%;
+    width: 32%;
   }
   .dessert {
-    width: 33%;
+    width: 32%;
   }
   .meal:hover .apparition_meal {
     margin: 0;
@@ -22,7 +28,7 @@
     }
   }
 }
-.responsive_meal {
-  margin-left: 10px;
-  margin-right: 10px;
-}
+// .responsive_meal {
+//   margin-left: 10px;
+//   margin-right: 10px;
+// }

@@ -15,7 +15,7 @@
 body {
   margin: auto;
   font-size: 10px;
-  background-color: #f2f2f2;
+  background-color: $fourth-color;
   max-width: 1440px;
   min-width: 320px;
   font-family: $secondary-font;
@@ -23,7 +23,7 @@ body {
 
 main {
   padding-top: 45px;
-  background-color: lighten($color: $primary-background, $amount: 2%);
+  background-color: $fourth-color;
 }
 a {
   text-decoration: none;
@@ -42,7 +42,7 @@ article {
 
 section {
   @include flexbox;
-  background-color: white;
+  background-color: $fifth-color;
 }
 // article 1
 
