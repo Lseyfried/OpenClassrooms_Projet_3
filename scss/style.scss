@@ -3,13 +3,6 @@
 @import "Utils/mixins";
 @import "Utils/Keyframes";
 @import "Layout/semantics";
-@import "Layout/Meal/meal";
-@import "Layout/Meal/meal---titles";
-@import "Layout/Meal/meal---queries";
-@import "Layout/Meal/Animation_meal/meal---animation";
-@import "Layout/Meal/Animation_meal/meal---rotation";
-@import "Layout/Meal/meal---validation";
-@import "Layout/Meal/header---heart";
 @import "Layout/Header/header---main";
 @import "Layout/Header/header---queries";
 @import "Layout/Header/header---menus";
@@ -26,6 +19,13 @@
 @import "Pages/Menu/menu---title";
 @import "Pages/Menu/restaurants";
 @import "Pages/Menu/New";
+@import "Layout/Meal/meal";
+@import "Layout/Meal/meal---titles";
+@import "Layout/Meal/meal---queries";
+@import "Layout/Meal/Animation_meal/meal---animation";
+@import "Layout/Meal/Animation_meal/meal---rotation";
+@import "Layout/Meal/meal---validation";
+@import "Layout/Meal/header---heart";
 @import "Components/Button/button--queries";
 @import "Components/Button/button";
 @import "Components/heart/Heart-menu/heart-menu";
