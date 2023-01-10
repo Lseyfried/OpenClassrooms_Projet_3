@@ -1,8 +1,8 @@
 .heart_color {
+  @include linear-gradient;
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
-  @include linear-gradient;
+  -webkit-text-fill-color: transparent;
   position: absolute;
   font-size: 26px;
   border: 0;
