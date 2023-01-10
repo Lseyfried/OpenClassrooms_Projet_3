@@ -47,7 +47,7 @@ button {
     @include box-shadow_button;
     transition: all 1.5s ease-in-out;
     &:hover {
-      opacity: 0.7;
+      opacity: 0.85;
       @include box-shadow_button---hover;
     }
     &---paragraphe {

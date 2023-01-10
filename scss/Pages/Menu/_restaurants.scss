@@ -4,8 +4,8 @@
   flex-grow: 1;
   background-color: lighten($color: $primary-background, $amount: 2%);
 
-  // margin-left: 15px;
-  // margin-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
   height: 1145px;
   font-family: $secondary-font;
   &_card {

@@ -25,22 +25,22 @@
     cursor: pointer;
   }
 }
-.heart_color {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  @include linear-gradient;
+// .heart_color {
+//   background-clip: text;
+//   -webkit-background-clip: text;
+//   color: transparent;
+//   @include linear-gradient;
 
-  position: absolute;
-  font-size: 26px;
-  border: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  &:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
-}
+//   position: absolute;
+//   font-size: 26px;
+//   border: 0;
+//   opacity: 0;
+//   transition: opacity 1s ease-in-out;
+//   &:hover {
+//     opacity: 1;
+//     cursor: pointer;
+//   }
+// }
 
 //   Dans les menus
 

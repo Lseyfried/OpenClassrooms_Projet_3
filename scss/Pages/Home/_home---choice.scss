@@ -4,9 +4,11 @@
   border-radius: 20px;
   position: relative;
   width: 250px;
+  min-width: 200px;
   height: auto;
   padding: 12px 5px;
   margin-bottom: 26px;
+  white-space: nowrap;
   @include box-shadow;
   &_icone {
     color: darken($fourth-color, 35%);
@@ -18,16 +20,28 @@
       color: $fifth-color;
       background-color: $primary-color;
       display: flex;
-      padding: 6px;
+      padding: 7px;
+      width: 7px;
+      height: 7px;
       border-radius: 195px 195px 195px 195px;
       -webkit-border-radius: 195px 195px 195px 195px;
       -moz-border-radius: 195px 195px 195px 195px;
       position: absolute;
-      left: -10px;
+      left: -9px;
       bottom: 20px;
     }
   }
   .last {
     margin-bottom: 25px;
+  }
+  .number {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    left: 7px;
+    bottom: 0px;
+  }
+  .first {
+    margin-left: 15px;
   }
 }
