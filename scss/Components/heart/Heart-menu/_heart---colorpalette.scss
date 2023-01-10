@@ -1,8 +1,8 @@
 .heart_color--navpalette {
+  @include linear-gradient;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  @include linear-gradient;
   position: absolute;
   left: 0;
   top: 0px;
