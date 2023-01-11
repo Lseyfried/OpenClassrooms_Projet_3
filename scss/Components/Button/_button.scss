@@ -45,7 +45,7 @@ button {
     cursor: pointer;
     @include linear-gradient;
     @include box-shadow_button;
-    transition: all 1.5s ease-in-out;
+    transition: all 0.3s ease-in-out 0s;
     &:hover {
       opacity: 0.85;
       @include box-shadow_button---hover;
